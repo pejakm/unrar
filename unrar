@@ -1,0 +1,17 @@
+#!/bin/sh
+
+while [ "$#" -ne "0" ]; do
+case $1 in
+lb)
+lsar "$2"
+exit 0
+;;
+e)
+unar -D "$2" -o "$3"
+exit 0
+;;
+esac
+shift
+done
+	echo "UNRAR faker v0.1   Unar wrapper for Okular by Mladen Pejaković"
+	echo "Licensed under the GNU GPLv3+"
